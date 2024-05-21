@@ -28,7 +28,7 @@ export default function MessageInput(props) {
                     IssueID: IssID,
                };
                const response = await fetch(
-                    "https://dizkuz-server.onrender.com/sendmessage",
+                    "https://prakhar-dizkuz-server.onrender.com/sendmessage",
                     {
                          method: "POST",
                          body: JSON.stringify(inp),

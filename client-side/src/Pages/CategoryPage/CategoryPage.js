@@ -39,7 +39,7 @@ function NewCategoryModal(props) {
                     ID: OrgID,
                };
                const response = await fetch(
-                    "https://dizkuz-server.onrender.com/newCategory",
+                    "https://prakhar-dizkuz-server.onrender.com/newCategory",
                     {
                          method: "POST",
                          body: JSON.stringify(inp),
