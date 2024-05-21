@@ -16,6 +16,7 @@ const CATEGORY = require("./routes/categories");
 const MEMBERS = require("./routes/members");
 const NEWISSUE = require("./routes/newIssue");
 const SENDCHAT = require("./routes/newMessage");
+const PORT = process.env.PORT || 8080;
 
 main().catch((err) => console.log(err));
 
@@ -58,6 +59,6 @@ server.use("/newIssue", NEWISSUE);
 server.use("/sendmessage", SENDCHAT);
 
 // starting server
-server.listen(8080, () => {
+server.listen(PORT, () => {
      console.log("server started");
 });
